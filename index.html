@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Button Effects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 15px 35px;
+
+            background-color: #007bff;
+            color: white;
+
+            border: none;
+            border-radius: 8px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Active Effect */
+        .button:active {
+            background-color: #003d80;
+            transform: translateY(1px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Focus Effect */
+        .button:focus {
+            outline: 3px solid #80bdff;
+            outline-offset: 4px;
+        }
+
+        .description {
+            color: #555;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Button Effects</h1>
+
+    <button class="button">
+        Click Me
+    </button>
+
+    <p class="description">
+        Try hovering, clicking, and focusing on the button.
+    </p>
+
+    <p class="description">
+        Author: <strong>S. Bhanu</strong>
+    </p>
+
+</body>
+</html>
